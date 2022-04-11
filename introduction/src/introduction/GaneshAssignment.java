@@ -14,7 +14,7 @@ public class GaneshAssignment {
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\ganesh.bandaru\\Downloads\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://github.com/");
-		driver.manage().window().maximize();//to maxmimize the window
+		driver.manage().window().maximize();//to maxmize the window
 		
 		driver.findElement(By.xpath("//input[@placeholder='Search GitHub']")).sendKeys("react");//github search
 		driver.findElement(By.id("jump-to-suggestion-search-global")).click(); //enter to be clicked
